@@ -6,8 +6,7 @@ const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain')
 
   console.log('req.url ----- ', req.url)
-  if(req.url!=="/favicon.ico")
-    console.log(req.url);
+
   switch(req.url) {
     case '/':
       res.end('Hello World!!')
@@ -38,7 +37,8 @@ req.url -----  /favicon.ico
 <meta http-equiv=X-UA-Compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta id=desc name=description content=宝能教学管理平台>
-<link rel=icon href=/h5/study.ico><title>宝能教学管理平台</title></head>
+<link rel=icon href=/h5/study.ico>
+<title>宝能教学管理平台</title></head>
 
 */
 
